@@ -25,6 +25,9 @@ console.log('kmTravel', kmTravel)
 const userAge = prompt('Quanti anni hai?').trim()
 console.log('userAge', userAge)
 
+const ticketPrice = (kmTravel * 0.21).toFixed(2)
+
+// condizioni per poter comprare il biglietto 
 if (isNaN(userAge) || isNaN(kmTravel)) {
     alert('Devi scrivere un numero')
 } else {
@@ -34,13 +37,21 @@ if (isNaN(userAge) || isNaN(kmTravel)) {
     ticketElement.innerText = ` Il costo del biglietto è di ${ticketPrice}€`
 }
 
+
+
 // prezzi scontati
 if (userAge < 18) {
     const underAge = (ticketPrice / 100) * 20;
     const ticketForSale = (ticketPrice - underAge).toFixed(2);
-
-    console.log(`Il prezzo del biglietto per i minori di 18 anni è ${ticketForSale}`)
-
+    console.log(`Il prezzo del biglietto per i minori di 18 anni è ${ticketForSale}€`)
+    const ticketElement = document.getElementById('ticket');
+    ticketElement.innerText = (`Il prezzo del tuo biglietto è di ${ticketForSale}€`)
+} else {
+    (userAge > 65)
+    const overAge = (ticketPrice / 100) * 40;
+    const ticketForSale = (ticketPrice - overAge).toFixed(2)
+    console.log(`Il prezzo del biglietto per i maggiori di 65 anni è ${ticketForSale}€`)
+    const ticketElement = document.getElementById('ticket');
+    ticketElement.innerText = `Il prezzo del tuo biglietto è di ${ticketForSale}€`
 
 }
-

@@ -53,5 +53,4 @@ if (userAge < 18) {
     console.log(`Il prezzo del biglietto per i maggiori di 65 anni è ${ticketForSale}€`)
     const ticketElement = document.getElementById('ticket');
     ticketElement.innerText = `Il prezzo del tuo biglietto è di ${ticketForSale}€`
-
 }

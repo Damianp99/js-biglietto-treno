@@ -1,0 +1,21 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.train{
+    background-image: url(../img/metro-2199831_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+}
+
+.train-ticket{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+#ticket{
+   
+}

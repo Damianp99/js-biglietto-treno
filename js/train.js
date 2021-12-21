@@ -25,3 +25,7 @@ const userAge = prompt('Quanti anni hai?').trim()
 console.log('userAge', userAge)
 
 
+const ticketPrice = (kmTravel * 0.21).toFixed()
+console.log(`Il costo del biglietto è ${ticketPrice}`)
+const ticketElement = document.getElementById('ticket')
+ticketElement.innerText = ` Il costo del biglietto è di ${ticketPrice}€`
